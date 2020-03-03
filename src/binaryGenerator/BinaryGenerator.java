@@ -28,7 +28,9 @@ public class BinaryGenerator {
         for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
             int asciiValue = userInputStringInLowerCase.charAt(i);
             String convert = Integer.toBinaryString(asciiValue);
-
+            int remaining = 8 - convert.length();
+            String append = "0".repeat(remaining) + convert;
+            stringBuilder.append(append);
         }
         String returnbuilder = new String(stringBuilder);
         return returnbuilder;
