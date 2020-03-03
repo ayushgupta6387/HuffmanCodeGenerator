@@ -24,6 +24,7 @@ public class BinaryGenerator {
 
     public String convertNormalStringToBinaryString() {
         StringBuilder stringBuilder = new StringBuilder();
+        userInputStringInLowerCase = userInputStringInLowerCase.toLowerCase();
         String returnbuilder = new String(stringBuilder);
         return returnbuilder;
     }
