@@ -17,6 +17,7 @@ public class Main {
         System.out.println("Please enter a string value: ");
         final Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine().trim();
+
         BinaryGenerator binaryGenerator = new BinaryGenerator(userInput);
         String binaryString = binaryGenerator.convertNormalStringToBinaryString();
         HuffmanGenerator huffmanGenerator = new HuffmanGenerator(userInput);
