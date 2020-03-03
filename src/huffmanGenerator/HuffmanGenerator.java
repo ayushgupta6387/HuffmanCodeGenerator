@@ -7,6 +7,8 @@
 
 package huffmanGenerator;
 
+import java.util.HashMap;
+
 public class HuffmanGenerator {
     private String userInputStringInLowerCase;
 
@@ -23,6 +25,9 @@ public class HuffmanGenerator {
     }
 
     public String convertNormalStringToHuffmanString() {
+        HashMap<Character, String> map = new HashMap<>();
+
         return "";
+
     }
 }
