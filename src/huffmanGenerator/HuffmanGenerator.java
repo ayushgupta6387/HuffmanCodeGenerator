@@ -53,7 +53,10 @@ public class HuffmanGenerator {
         map.put('y', "100011");
         map.put('z', "110001010");
         userInputStringInLowerCase = userInputStringInLowerCase.toLowerCase();
-
+        StringBuilder builder1 = new StringBuilder();
+        for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
+            builder1.append(map.get(userInputStringInLowerCase.charAt(i)));
+        }
         return "";
 
     }
